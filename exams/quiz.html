@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/quiz.css">
+</head>
+
+<body>
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary"></button>
+            </div>
+            <div class="img bg-wrap text-center py-4">
+                <div class="user-logo">
+                    <h3 style="color: white;">Computer Science</h3>
+                </div>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a onclick="moveTo('q1')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 1</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q2')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 2</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q3')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 3</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 4</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 5</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 6</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 7</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 8</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 9</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 10</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 11</a>
+                </li>
+                <li class="active">
+                    <a onclick="moveTo('q4')"><span class="fa ri-arrow-right-fill mr-3"></span> Question 12</a>
+                </li>
+            </ul>
+
+        </nav>
+
+            <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div class="wrappers">
+                <div class="wrap" id="q1">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"><span id="number"> </span>1 of 3 </div>
+                    </div>
+                    <div class="h4 font-weight-bold"> 1. Who is the Prime Minister of India?</div>
+                    <div class="pt-4">
+                        <form class="form-d"> 
+                            <label class="options">Rahul Gandhi <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Indira Gandhi <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Narendra Modi <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Ram Nath Kovind <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-end pt-2">
+                        <button class="btn btn-primary" onclick="change('q1', 'q2', 'next')" id="next1">Next <span class="fas fa-arrow-right"></span> </button>
+                    </div>
+                </div>
+                <div class="wrap" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>2 of 3 </div>
+                    </div>
+                    <div class="h4 font-weight-bold"> 2. IPV4 stand's for?</div>
+                    <div class="pt-4">
+                        <form class="form-d">
+                            <label class="options">Internet Protocol Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eos! <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Intranet Protocol Lorem ipsum dolor sit amet consectetur adipisicing elit. Est! <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">internet Protocol Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, enim. <input type="radio" name="radio" id="rd"> <span class="checkmark"></span> </label>
+                            <label class="options">None of the above Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam. <input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-end pt-2">
+                        <button class="btn btn-primary mx-3" onclick="change('q2', 'q1', 'prev')" id="back1"><span class="fas fa-arrow-left pr-1"></span>Previous </button>
+                        <button class="btn btn-primary" onclick="change('q2', 'q3', 'next')" id="next2">Next <span class="fas fa-arrow-right"></span> </button>
+                    </div>
+                </div>
+                <div class="wrap" id="q3">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>3 of 4 </div>
+                    </div>
+                    <div class="h4 font-weight-bold"> 3. IPV4 stand's for?</div>
+                    <div class="pt-4">
+                        <form class="form-d">
+                            <label class="options">Internet Protocol Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eos! <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Intranet Protocol Lorem ipsum dolor sit amet consectetur adipisicing elit. Est! <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">internet Protocol Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, enim. <input type="radio" name="radio" id="rd"> <span class="checkmark"></span> </label>
+                            <label class="options">None of the above Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam. <input type="radio" name="radio"> <span class="checkmark"></span> </label> 
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-end pt-2">
+                        <button class="btn btn-primary mx-3" onclick="change('q3', 'q2', 'prev')" id="back1"><span class="fas fa-arrow-left pr-1"></span>Previous </button>
+                        <button class="btn btn-primary" onclick="change('q3', 'q4', 'next')" id="next2">Next <span class="fas fa-arrow-right"></span> </button>
+                    </div>
+                </div>
+                <div class="wrap" id="q4">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold"> <span id="number"> </span>4 of 4 </div>
+                    </div>
+                    <div class="h4 font-weight-bold"> 4. What is the full form of CSS?</div>
+                    <div class="pt-4">
+                        <form class="form-d">
+                            <label class="options">Clarity Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Cascading Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Confirm Style sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                            <label class="options">Canvas Style Sheets <input type="radio" name="radio"> <span class="checkmark"></span> </label>
+                        </form>
+                    </div>
+                    <div class="d-flex justify-content-end pt-2">
+                        <button class="btn btn-primary mx-3" onclick="change('q4', 'q3', 'prev')" id="back2"> <span class="fas fa-arrow-left pr-2"></span>Previous </button> 
+                        <button class="btn btn-primary" id="next3">Submit </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <div class="h3 font-weight-bold text-white">Go Dark</div> <label class="switch"> <input type="checkbox"> <span class="slider round"></span> </label>
+            </div>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+/* Login main page */
+
+h1 {
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.Join-container { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 370px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+    box-shadow: 4px 4px 20px black;
+}
+
+.logsign-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    padding: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+
+.logsign-box p, .logsign-box div {
+    text-align: center;
+}
+
+/* Login Modal Section */
+
+.Modal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100%;
+    padding-top: 130px;
+    -webkit-transition: 0.5s;
+    overflow: auto;
+    transition: all 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+/* .ModalOpen { overflow: hidden; } */
+.is-hidden { display: none; }
+.is-visuallyHidden { opacity: 0; }
+
+.is-blurred {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.Close {
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin-left: auto;
+    /* margin-right: 5px; */
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+  
+.Close:hover, .Close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-design {
+    background-color:rgb(255, 255, 255);
+    max-width: 450px;
+    padding: 0 30px;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 15px black;
+}
+
+.form-design h2 {
+    font-size: 2rem;
+    margin: 12px 5px;
+}
+
+.form-design input {
+    width: 370px;
+    padding: 7px 8px;
+    margin: 12px 5px;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0px 4px 5px black;
+}
+
+.password-box {
+    width: 380px;
+}
+
+.eye {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -37px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.open-eye {
+    display: none;
+}
+
+.forgot {
+    margin-left: auto;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.forgot:active {
+    text-decoration: underline;
+}
+
+.btn {
+    outline: none;
+    margin: 20px 5px;
+    padding: 3px 5px;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Admin styling */
+
+.take {
+    border: 2px solig green
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 30px auto;
+    box-shadow: 4px 4px 15px black;
+    padding:30px;
+}
+
+.inp-block {
+    display: flex;
+    flex-direction: row;
+    /* background-color:rgb(255, 0, 0); */
+    justify-content: space-between;
+    margin: 20px 10px;
+    width: 80%;
+    font-weight: bold;
+}
+
+@media (max-width: 1060px) {
+    .Join-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        box-shadow: 0px 0px 0px black;
+    }
+    .logsign-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 { font-size: 2rem; }
+    .form-design { height: 300px;}
+    .form-design input { max-width: 250px; margin: 8px 0px; padding: 4px 5px; font-size: 12px;}
+    .password-box { max-width: 250px;}
+    .eye { font-size: 1em; margin-top: 12px; margin-left: -22px;}
+    .btn { font-size: 12px;}
+}

@@ -1,0 +1,256 @@
+.action {
+    position: relative;
+    top: 10px;
+    margin-left: 60px;
+}
+
+.action .profile {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.action .profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action #menu {
+    position: absolute;
+    padding: 10px 20px;
+    background: rgb(255, 225, 225);
+    max-width: 200px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 5s;
+    display: none;
+}
+
+.action #menu.visible {
+    display: block;
+    top: 55px;
+    right: 18px;
+}
+
+.action #menu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 225, 225);
+    transform: rotate(45deg);
+}
+
+.action #menu h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.5em;
+}
+
+.action #menu h3 span {
+    font-size: 14px;
+    color: #050505;
+    font-weight: 300;
+}
+
+.action #menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.action #menu ul li {
+    list-style: none;
+    padding: 5px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.action #menu ul li i {
+    color: black;
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.action #menu ul li:hover .action #menu ul li a {
+    color: black
+}
+
+.action #menu ul li:hover i {
+    opacity: 1;
+}
+
+.action #menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+#menu> a:hover {
+    background: rgb(255, 205, 205);
+}
+
+.action #menu ul li:hover a {
+    color: #000000;
+}
+
+@media (max-width: 991px) {
+    .action {
+        max-width: 1000px;
+        top: 0px;
+        height: 230px;
+        margin-left: 0px;
+    }
+
+    .action #menu {
+        max-width:1000px;
+        transition: 0s;
+    }
+    
+    .action #menu.visible {
+        width: 90%;
+    }
+
+}
+
+.options {
+    background-color: rgb(174, 179, 255);
+    padding: 40px;
+    width: 100%;
+}
+
+.options ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.options li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.options li a {
+    padding: 10px 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.options li:hover a {
+    background-color: orange;
+    color: white;
+}
+
+.not-icon {
+    cursor: pointer;
+    margin-left: 50px;
+    line-height: 60px;
+    background-color:red;
+    /* width: 10px; */
+}
+
+.not-icon span {
+    /* background: #f00; */
+    padding: 7px;
+    border-radius: 50%;
+    color: #fff;
+    vertical-align: top;
+    margin-left: -25px
+}
+
+.not-icon i {
+    float: right;
+    width: 26px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.not-icon:hover {
+    opacity: .7
+}
+
+.logo {
+    flex: 1;
+    margin-left: 50px;
+    color: #eee;
+    font-size: 20px;
+    font-family: monospace
+}
+
+.notifications {
+    max-width: 300px;
+    z-index: 3;
+    position: absolute;
+    top: 161px;
+    right: 5px;
+    border-radius: 5px 0px 5px 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+
+.notifications h2 {
+    font-size: 14px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    color: #999
+}
+
+.notifications h2 span {
+    color: #f00
+}
+
+.notifications-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 6px 30px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.notifications-item:hover {
+    background-color: #eee;
+}
+
+.notifications-item img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 9px;
+    border-radius: 50%;
+    margin-top: 2px
+}
+
+.notifications-item .text h4 {
+    color: #777;
+    font-size: 16px;
+    margin-top: 3px
+}
+
+.notifications-item .text p {
+    color: #aaa;
+    font-size: 12px
+}
+
+.row li {
+    color: white
+}
